@@ -8,6 +8,7 @@ import Contact from './Resources/pages/contact';
 import Gallery from './Resources/pages/gallery';
 import './Resources/style/navbar-style.css'
 import './App.css';
+import MuseumDetail from './Resources/pages/home/detail';
 
 function AppContent() {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,6 +73,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/museum/:id" element={<MuseumDetail/>} />
       </Routes>
     </Router>
   );

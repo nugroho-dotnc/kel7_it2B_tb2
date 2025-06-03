@@ -5,5 +5,5 @@ import App from './App.jsx'; // Mengimpor komponen utama aplikasi Anda
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
 );
