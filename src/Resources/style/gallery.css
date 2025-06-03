@@ -1,0 +1,5 @@
+.bg-img1{
+    background-image: url("/images/museum.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

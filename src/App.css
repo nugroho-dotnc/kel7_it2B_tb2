@@ -58,6 +58,7 @@ body {
 .mt-16 { margin-top: 16px; }
 .mt-24 { margin-top: 24px; }
 .mt-32 { margin-top: 32px; }
+.mt-64 { margin-top: 64px; }
 .mt-96 { margin-top: 96px; }
 .mt-auto { margin-top: auto; }
 
@@ -333,6 +334,10 @@ body {
   background-color: #0000001A;
 }
 
+.bg-black-90{
+  background-color: #0000006E;
+}
+
 .bg-white{
   background-color: #FFF;
 }
@@ -457,3 +462,19 @@ body {
   .xl\:max-w-5xl { max-width: 1024px; }
   .xl\:text-4xl { font-size: 36px; }
 }
+
+.opacity-0   { opacity: 0; }
+.opacity-5   { opacity: 0.05; }
+.opacity-10  { opacity: 0.1; }
+.opacity-20  { opacity: 0.2; }
+.opacity-25  { opacity: 0.25; }
+.opacity-30  { opacity: 0.3; }
+.opacity-40  { opacity: 0.4; }
+.opacity-50  { opacity: 0.5; }
+.opacity-60  { opacity: 0.6; }
+.opacity-70  { opacity: 0.7; }
+.opacity-75  { opacity: 0.75; }
+.opacity-80  { opacity: 0.8; }
+.opacity-90  { opacity: 0.9; }
+.opacity-95  { opacity: 0.95; }
+.opacity-100 { opacity: 1; }
