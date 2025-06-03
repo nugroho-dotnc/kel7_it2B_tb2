@@ -1,0 +1,15 @@
+.about{
+    background-color: #ffffff;
+}
+
+.foto-nugi{
+    background-image: url("/images/person1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-nopal{
+    background-image: url("/images/person2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
