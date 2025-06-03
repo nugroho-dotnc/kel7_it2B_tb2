@@ -1,0 +1,99 @@
+.bg-hero{
+    background-image: url("/images/HERO.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-recomend{
+    background-image: url("/images/RECOMEND.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headline {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.text-content{
+  font-size: 18px;
+}
+
+button{
+  background: none;
+  border: none;
+  font-size: 12px;
+}
+
+.recomend{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 16px;
+}
+.welcome{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 90%;
+  gap: 32px;
+}
+.welcome-left{
+  width: 100%;
+}
+.welcome-right{
+  width: 100%;
+}
+
+.leftRec{
+  width: 100%;
+}
+.rightRec{
+  width: 100%;
+  overflow-x: scroll;
+}
+.kepala{
+  height: 400px;
+  width: 400px;
+}
+@media (min-width: 768px) {
+  .headline {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .text-content{
+  font-size: 24px;
+  }
+  button{
+    background: none;
+    border: none;
+    font-size: 16px;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+  .welcome{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+  .welcome-left{
+    width: 50%;
+  }
+  .welcome-right{
+    width: 50%;
+  }
+  .leftRec{
+    width: 30%;
+  }
+  .rightRec{
+    width: 70%;
+    overflow-x: scroll;
+  }
+  .rightRec .content{
+  overflow-x: scroll;
+}
+  .kepala{
+    height: 500px;
+    width: 500px;
+  }
+}

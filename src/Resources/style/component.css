@@ -1,0 +1,69 @@
+/* component.css */
+
+.museum-card {
+  position: relative;
+  width: 208px;
+  height: 288px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-family: sans-serif;
+}
+
+.museum-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.6); /* 60% alpha */
+  color: white;
+}
+
+.overlay h3 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 12px;
+  margin: 4px 0 0;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.input-container input, 
+.input-container textarea { 
+  font-family: "playfair-display";
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #725D3B;
+  background-color: transparent;
+  color: #725D3B;
+  padding: 8px 0;
+  font-size: 16px;
+  outline: none;
+  resize: vertical; 
+  min-height: 40px; 
+}
+
+
+.input-container input::placeholder,
+.input-container textarea::placeholder {
+  color: #725D3B;
+  opacity: 0.6; 
+}
+
+.input-container ::-webkit-input-placeholder {
+  color: #725D3B;
+}
