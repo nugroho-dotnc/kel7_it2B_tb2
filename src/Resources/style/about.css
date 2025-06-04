@@ -1,15 +1,106 @@
+
 .about{
-    background-color: #ffffff;
+    background-color: #FFF8ED;
+    margin-top: 64px;
+    height: 100vh;
+    width:100vw;
+    
 }
 
 .foto-nugi{
     background-image: url("/images/person1.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 75%;
+    width: 75%;
 }
 
 .foto-nopal{
     background-image: url("/images/person2.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 75%;
+    width: 75%;
+}
+
+.container{
+    height: 100vh;
+}
+
+.frame{
+    width: 100vw;
+    display: flex;
+    height: 50%;
+}
+
+.frame-foto{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame-deskripsi{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+
+    .about {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .frame {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .frame-foto,
+    .frame-deskripsi {
+        width: 100vw;
+        height: auto;
+        padding: 16px;
+    }
+
+    .foto-nugi,
+    .foto-nopal {
+        width: 100%;
+        height: 300px;
+    }
+
+    .frame-deskripsi > div {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .frame-deskripsi h1 {
+        text-align: center !important;
+    }
+
+    .frame-deskripsi p {
+        text-align: justify !important;
+    }
+
+    .frame-deskripsi p {
+        padding: 0 16px;
+    }
+
+    .frame-deskripsi a {
+        display: inline-block;
+        margin: 0 8px;
+    }
+
+    .reverse-on-mobile {
+        flex-direction: column-reverse;
+    }
 }

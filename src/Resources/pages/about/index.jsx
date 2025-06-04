@@ -1,19 +1,29 @@
 import React from "react";
 import "../../style/about.css";
+
 const About = () => {
     return (
         <>
-            <div className="h-screen">
-                <div className="about h-screen mt-64 bg-primary-100">
-                    <div className="w-full flex" style={{height: "50%"}}>
-                        <div className="w-1/2 h-full flex justify-center items-center">
-                            <div className="foto-nugi bg-black-90" style={{height: "75%", width: "75%"}}></div>
+            <div className="container">
+                <div className="about">
+                    {/* Frame: Nugroho */}
+                    <div className="frame">
+                        <div className="frame-foto">
+                            <div className="foto-nugi"></div>
                         </div>
-                        <div className="w-1/2 h-full flex justify-center items-center">
-                            <div className="text-secondary-100" style={{height: "75%", width: "75%"}}>
-                                <h1 className="text-center">Nugroho Nur Cahyo</h1>
-                                <p className="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eligendi officia vitae reprehenderit saepe sint sunt fugit distinctio odit doloremque? Veritatis quasi animi ipsa maxime molestiae saepe eligendi, voluptas perferendis optio tempora laboriosam explicabo nam. Ex nemo odit impedit iure labore. Facilis repellendus nesciunt optio minima, iure possimus atque qui praesentium dolor suscipit nemo quis voluptatum soluta quas dolores culpa. Iste iure tempora accusantium autem dolore molestias ex officia similique, enim voluptas ducimus qui aspernatur voluptates eum nam quaerat vitae sit quidem quae, labore molestiae. Fugiat, numquam dolorum quia nisi quos similique voluptatum temporibus minus quasi a inventore harum nulla!</p>
-                                <div className="mt-8">
+                        <div className="frame-deskripsi">
+                            <div style={{ height: "75%", width: "75%", color: "#847253" }}>
+                                <h1 style={{ textAlign: "center" }}>Nugroho Nur Cahyo</h1>
+                                <p style={{ textAlign: "justify" }}>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eligendi officia vitae reprehenderit
+                                    saepe sint sunt fugit distinctio odit doloremque? Veritatis quasi animi ipsa maxime molestiae saepe eligendi,
+                                    voluptas perferendis optio tempora laboriosam explicabo nam. Ex nemo odit impedit iure labore. Facilis
+                                    repellendus nesciunt optio minima, iure possimus atque qui praesentium dolor suscipit nemo quis voluptatum
+                                    soluta quas dolores culpa. Iste iure tempora accusantium autem dolore molestias ex officia similique, enim
+                                    voluptas ducimus qui aspernatur voluptates eum nam quaerat vitae sit quidem quae, labore molestiae. Fugiat,
+                                    numquam dolorum quia nisi quos similique voluptatum temporibus minus quasi a inventore harum nulla!
+                                </p>
+                                <div style={{ marginTop: "8px" }}>
                                     <a href="https://www.instagram.com/nugroho.nc/" target="_blank">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -45,33 +55,12 @@ const About = () => {
                                             </g>
                                         </svg>
                                     </a>
-                                    <a href="https://github.com/nugroho-dotnc" target="_blank">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            x="0px"
-                                            y="0px"
-                                            width="35"
-                                            height="35"
-                                            viewBox="0 0 256 256"
-                                            >
-                                            <g
-                                                fill="#847253"
-                                                fillRule="nonzero"
-                                                stroke="none"
-                                                strokeWidth="1"
-                                                strokeLinecap="butt"
-                                                strokeLinejoin="miter"
-                                                strokeMiterlimit="10"
-                                                strokeDasharray=""
-                                                strokeDashoffset="0"
-                                                fontFamily="none"
-                                                fontWeight="none"
-                                                fontSize="none"
-                                                textAnchor="none"
-                                                style={{ mixBlendMode: "normal" }}
-                                            >
+                                    <a href="https://github.com/nugroho-dotnc" target="_blank" rel="noreferrer">
+                                        {/* GitHub Icon */}
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 256 256">
+                                            <g fill="#847253">
                                                 <g transform="scale(8.53333,8.53333)">
-                                                <path d="M15,3c-6.627,0 -12,5.373 -12,12c0,5.623 3.872,10.328 9.092,11.63c-0.056,-0.162 -0.092,-0.35 -0.092,-0.583v-2.051c-0.487,0 -1.303,0 -1.508,0c-0.821,0 -1.551,-0.353 -1.905,-1.009c-0.393,-0.729 -0.461,-1.844 -1.435,-2.526c-0.289,-0.227 -0.069,-0.486 0.264,-0.451c0.615,0.174 1.125,0.596 1.605,1.222c0.478,0.627 0.703,0.769 1.596,0.769c0.433,0 1.081,-0.025 1.691,-0.121c0.328,-0.833 0.895,-1.6 1.588,-1.962c-3.996,-0.411 -5.903,-2.399 -5.903,-5.098c0,-1.162 0.495,-2.286 1.336,-3.233c-0.276,-0.94 -0.623,-2.857 0.106,-3.587c1.798,0 2.885,1.166 3.146,1.481c0.896,-0.307 1.88,-0.481 2.914,-0.481c1.036,0 2.024,0.174 2.922,0.483c0.258,-0.313 1.346,-1.483 3.148,-1.483c0.732,0.731 0.381,2.656 0.102,3.594c0.836,0.945 1.328,2.066 1.328,3.226c0,2.697 -1.904,4.684 -5.894,5.097c1.098,0.573 1.899,2.183 1.899,3.396v2.734c0,0.104 -0.023,0.179 -0.035,0.268c4.676,-1.639 8.035,-6.079 8.035,-11.315c0,-6.627 -5.373,-12 -12,-12z"></path>
+                                                    <path d="M15,3c-6.6,0-12,5.4-12,12c0,5.6,3.9,10.3,9.1,11.6v-2c-0.5,0-1.3,0-1.5,0c-0.8,0-1.6-0.4-1.9-1c-0.4-0.7-0.5-1.8-1.4-2.5c-0.3-0.2-0.1-0.5,0.3-0.5c0.6,0.2,1.1,0.6,1.6,1.2c0.5,0.6,0.7,0.8,1.6,0.8c0.4,0,1.1,0,1.7-0.1c0.3-0.8,0.9-1.6,1.6-2c-4-0.4-5.9-2.4-5.9-5.1c0-1.2,0.5-2.3,1.3-3.2c-0.3-0.9-0.6-2.9,0.1-3.6c1.8,0,2.9,1.2,3.1,1.5c0.9-0.3,1.9-0.5,2.9-0.5c1,0,2,0.2,2.9,0.5c0.3-0.3,1.3-1.5,3.1-1.5c0.7,0.7,0.4,2.7,0.1,3.6c0.8,0.9,1.3,2.1,1.3,3.2c0,2.7-1.9,4.7-5.9,5.1c1.1,0.6,1.9,2.2,1.9,3.4v2.7c4.7-1.6,8-6.1,8-11.3c0-6.6-5.4-12-12-12z" />
                                                 </g>
                                             </g>
                                         </svg>
@@ -80,12 +69,20 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full flex" style={{height: "50%"}}>
-                        <div className="w-1/2 h-full flex justify-center items-center">
-                            <div className="text-secondary-100" style={{height: "75%", width: "75%"}}>
-                                <h1 className="text-center">Naufal Bintang Pradana Himawan</h1>
-                                <p className="text-justify">"Halo semuanya, perkenalkan namaku Naufal Bintang Pradana Himawan. Aku adalah seorang mahasiswa semester 2 yang berkuliah di Politeknik Negeri Jakarta. Ini adalah project pertamaku yang menggunakan framework JavaScript, yaitu ReactJS. Dalam project ini, aku membantu teman satu kelompokku, Nugroho, dalam aspek membuat desain di beberapa halaman dan mengimplementasikanya juga ka dalam kode. Kalo mau kenalan, hit me up di sosmed yang udah aku cantumin di bawah yaa 👋👋"</p>
-                                <div className="mt-8">
+
+                    {/* Frame: Naufal */}
+                    <div className="frame reverse-on-mobile">
+                        <div className="frame-deskripsi">
+                            <div style={{ height: "75%", width: "75%", color: "#847253" }}>
+                                <h1 style={{ textAlign: "center" }}>Naufal Bintang Pradana Himawan</h1>
+                                <p style={{ textAlign: "justify" }}>
+                                    "Halo semuanya, perkenalkan namaku Naufal Bintang Pradana Himawan. Aku adalah seorang mahasiswa semester 2
+                                    yang berkuliah di Politeknik Negeri Jakarta. Ini adalah project pertamaku yang menggunakan framework JavaScript,
+                                    yaitu ReactJS. Dalam project ini, aku membantu teman satu kelompokku, Nugroho, dalam aspek membuat desain di
+                                    beberapa halaman dan mengimplementasikanya juga ke dalam kode. Kalo mau kenalan, hit me up di sosmed yang udah
+                                    aku cantumin di bawah yaa 👋👋"
+                                </p>
+                                <div style={{ marginTop: "8px" }}>
                                     <a href="https://www.instagram.com/_naufalbintang_/" target="_blank">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -117,64 +114,22 @@ const About = () => {
                                             </g>
                                         </svg>
                                     </a>
-                                    <a href="https://x.com/_arixa" target="_blank">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            x="0px"
-                                            y="0px"
-                                            width="35"
-                                            height="35"
-                                            viewBox="0 0 256 256"
-                                            >
-                                            <g
-                                                fill="#847253"
-                                                fillRule="nonzero"
-                                                stroke="none"
-                                                strokeWidth="1"
-                                                strokeLinecap="butt"
-                                                strokeLinejoin="miter"
-                                                strokeMiterlimit="10"
-                                                strokeDasharray=""
-                                                strokeDashoffset="0"
-                                                fontFamily="none"
-                                                fontWeight="none"
-                                                fontSize="none"
-                                                textAnchor="none"
-                                                style={{ mixBlendMode: "normal" }}
-                                            >
+                                    <a href="https://x.com/_arixa" target="_blank" rel="noreferrer">
+                                        {/* X (Twitter) Icon */}
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 256 256">
+                                            <g fill="#847253">
                                                 <g transform="scale(5.12,5.12)">
-                                                <path d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z"></path>
+                                                    <path d="M5.9,6l14.7,21.4l-14.4,16.6h3.2l12.6-14.6l10,14.6h12l-15.3-22.3l13.5-15.7h-3.2l-11.8,13.6l-9.3-13.6zM9.7,8h7.2l23.3,34h-7.2z" />
                                                 </g>
                                             </g>
                                         </svg>
                                     </a>
-                                    <a href="https://github.com/naufalbintang" target="_blank">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            x="0px"
-                                            y="0px"
-                                            width="35"
-                                            height="35"
-                                            viewBox="0 0 256 256"
-                                            >
-                                            <g
-                                                fill="#847253"
-                                                fillRule="nonzero"
-                                                stroke="none"
-                                                strokeWidth="1"
-                                                strokeLinecap="butt"
-                                                strokeLinejoin="miter"
-                                                strokeMiterlimit="10"
-                                                strokeDasharray=""
-                                                strokeDashoffset="0"
-                                                fontFamily="none"
-                                                fontWeight="none"
-                                                fontSize="none"
-                                                textAnchor="none"
-                                                style={{ mixBlendMode: "normal" }}
-                                            >
+                                    <a href="https://github.com/naufalbintang" target="_blank" rel="noreferrer">
+                                        {/* GitHub Icon */}
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 256 256">
+                                            <g fill="#847253">
                                                 <g transform="scale(8.53333,8.53333)">
-                                                <path d="M15,3c-6.627,0 -12,5.373 -12,12c0,5.623 3.872,10.328 9.092,11.63c-0.056,-0.162 -0.092,-0.35 -0.092,-0.583v-2.051c-0.487,0 -1.303,0 -1.508,0c-0.821,0 -1.551,-0.353 -1.905,-1.009c-0.393,-0.729 -0.461,-1.844 -1.435,-2.526c-0.289,-0.227 -0.069,-0.486 0.264,-0.451c0.615,0.174 1.125,0.596 1.605,1.222c0.478,0.627 0.703,0.769 1.596,0.769c0.433,0 1.081,-0.025 1.691,-0.121c0.328,-0.833 0.895,-1.6 1.588,-1.962c-3.996,-0.411 -5.903,-2.399 -5.903,-5.098c0,-1.162 0.495,-2.286 1.336,-3.233c-0.276,-0.94 -0.623,-2.857 0.106,-3.587c1.798,0 2.885,1.166 3.146,1.481c0.896,-0.307 1.88,-0.481 2.914,-0.481c1.036,0 2.024,0.174 2.922,0.483c0.258,-0.313 1.346,-1.483 3.148,-1.483c0.732,0.731 0.381,2.656 0.102,3.594c0.836,0.945 1.328,2.066 1.328,3.226c0,2.697 -1.904,4.684 -5.894,5.097c1.098,0.573 1.899,2.183 1.899,3.396v2.734c0,0.104 -0.023,0.179 -0.035,0.268c4.676,-1.639 8.035,-6.079 8.035,-11.315c0,-6.627 -5.373,-12 -12,-12z"></path>
+                                                    <path d="M15,3c-6.6,0-12,5.4-12,12c0,5.6,3.9,10.3,9.1,11.6v-2c-0.5,0-1.3,0-1.5,0c-0.8,0-1.6-0.4-1.9-1c-0.4-0.7-0.5-1.8-1.4-2.5c-0.3-0.2-0.1-0.5,0.3-0.5c0.6,0.2,1.1,0.6,1.6,1.2c0.5,0.6,0.7,0.8,1.6,0.8c0.4,0,1.1,0,1.7-0.1c0.3-0.8,0.9-1.6,1.6-2c-4-0.4-5.9-2.4-5.9-5.1c0-1.2,0.5-2.3,1.3-3.2c-0.3-0.9-0.6-2.9,0.1-3.6c1.8,0,2.9,1.2,3.1,1.5c0.9-0.3,1.9-0.5,2.9-0.5c1,0,2,0.2,2.9,0.5c0.3-0.3,1.3-1.5,3.1-1.5c0.7,0.7,0.4,2.7,0.1,3.6c0.8,0.9,1.3,2.1,1.3,3.2c0,2.7-1.9,4.7-5.9,5.1c1.1,0.6,1.9,2.2,1.9,3.4v2.7c4.7-1.6,8-6.1,8-11.3c0-6.6-5.4-12-12-12z" />
                                                 </g>
                                             </g>
                                         </svg>
@@ -182,13 +137,14 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-1/2 h-full flex justify-center items-center">
-                            <div className="foto-nopal bg-black-90" style={{height: "75%", width: "75%"}}></div>
+                        <div className="frame-foto">
+                            <div className="foto-nopal"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
+
 export default About;
