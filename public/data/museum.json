@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "nama": "Museum Nasional",
+    "deskripsi": "Museum terbesar di Indonesia yang menyimpan koleksi benda-benda sejarah, arkeologi, etnografi, dan geografi dari seluruh nusantara.",
+    "lokasi": "Jl. Medan Merdeka Barat No.12, Gambir, Jakarta Pusat",
+    "gambar": "/images/museum/museum-nasional.jpeg",
+    "koleksi": [
+      {
+        "gambar": null,
+        "nama": "Arca Ganesha",
+        "deskripsi": "Patung dewa Ganesha dari zaman Hindu-Buddha di Indonesia."
+      },
+      {
+        "gambar": null,
+        "nama": "Perhiasan Emas",
+        "deskripsi": "Koleksi perhiasan emas dari berbagai kerajaan di Nusantara."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nama": "Museum Basoeki Abdullah",
+    "deskripsi": "Museum yang didedikasikan untuk pelukis ternama Indonesia, Basoeki Abdullah, menampilkan karya seni, lukisan, dan barang pribadi beliau.",
+    "lokasi": "Jl. Keuangan Raya No.19, Cilandak Barat, Jakarta Selatan",
+    "gambar": "/images/museum/museum-nasional.jpeg",
+    "koleksi": [
+      {
+        "gambar": null,
+        "nama": "Lukisan Pemandangan Alam",
+        "deskripsi": "Salah satu lukisan ikonik karya Basoeki Abdullah."
+      },
+      {
+        "gambar": null,
+        "nama": "Alat Lukis",
+        "deskripsi": "Peralatan melukis yang digunakan oleh Basoeki Abdullah."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nama": "Museum Taman Prasasti",
+    "deskripsi": "Museum terbuka yang menyimpan koleksi prasasti, nisan, dan peninggalan pemakaman bergaya kolonial.",
+    "lokasi": "Jl. Tanah Abang I No.1, Jakarta Pusat",
+    "gambar": "/images/museum/museum-nasional.jpeg",
+    "koleksi": [
+      {
+        "gambar": null,
+        "nama": "Nisan VOC",
+        "deskripsi": "Nisan dari masa pemerintahan VOC di Batavia."
+      },
+      {
+        "gambar": null,
+        "nama": "Kereta Jenazah Antik",
+        "deskripsi": "Kereta jenazah bersejarah dari masa kolonial Belanda."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nama": "Museum Bank Indonesia",
+    "deskripsi": "Museum edukatif yang menampilkan sejarah perbankan dan sistem keuangan Indonesia.",
+    "lokasi": "Jl. Pintu Besar Utara No.3, Jakarta Barat",
+    "gambar": "/images/museum/museum-nasional.jpeg",
+    "koleksi": [
+      {
+        "gambar": null,
+        "nama": "Mesin Hitung Kuno",
+        "deskripsi": "Mesin hitung yang digunakan oleh pegawai bank pada awal abad ke-20."
+      },
+      {
+        "gambar": null,
+        "nama": "Uang Kuno",
+        "deskripsi": "Koleksi uang kertas dan koin dari berbagai masa di Indonesia."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nama": "Museum Layang-Layang Indonesia",
+    "deskripsi": "Museum yang menampilkan berbagai jenis layang-layang tradisional dan modern dari Indonesia dan mancanegara.",
+    "lokasi": "Jl. H. Kamang No.38, Pondok Labu, Jakarta Selatan",
+    "gambar": "/images/museum/museum-nasional.jpeg",
+    "koleksi": [
+      {
+        "gambar": null,
+        "nama": "Layang-Layang Bali",
+        "deskripsi": "Layang-layang tradisional dari Bali dengan bentuk naga."
+      },
+      {
+        "gambar": null,
+        "nama": "Layang-Layang Modern",
+        "deskripsi": "Layang-layang kreatif dengan bentuk karakter kartun."
+      }
+    ]
+  }
+]

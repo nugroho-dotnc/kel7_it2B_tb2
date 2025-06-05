@@ -1,8 +1,19 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import "../../../App.css"
 import "../../style/home.css"
 import MuseumCard from "../../components/museum-card";
 const Home = () => {
+    const [museum, setMuseum] = useState([])
+    const fetchMuseum = async () =>{
+        const response = await fetch("/data/museum.json")
+        const data = await response.json()
+        setMuseum(data);
+    }
+    useEffect(() => {
+        fetchMuseum()
+    }, [])
+    
     return (
         <>
         <div className="flex flex-col gap-16" style={{ scrollBehavior:"smooth" }}>
@@ -58,12 +69,13 @@ const Home = () => {
                             </div>
                             <div className="flex start rightRec">
                                <div className="flex justify-start gap-8">
-                                    <MuseumCard image={"/images/HERO.png"} title={"Museum Jakarta Barat"} desc={"ini adalah museum yang ..."}/>
-                                    <MuseumCard image={"/images/HERO.png"} title={"Museum Jakarta Barat"} desc={"ini adalah museum yang ..."}/>
-                                    <MuseumCard image={"/images/HERO.png"} title={"Museum Jakarta Barat"} desc={"ini adalah museum yang ..."}/>
-                                    <MuseumCard image={"/images/HERO.png"} title={"Museum Jakarta Barat"} desc={"ini adalah museum yang ..."}/>
-                                    <MuseumCard image={"/images/HERO.png"} title={"Museum Jakarta Barat"} desc={"ini adalah museum yang ..."}/>
-                                    <MuseumCard image={"/images/HERO.png"} title={"Museum Jakarta Barat"} desc={"ini adalah museum yang ..."}/>
+                                    {
+                                        museum.map((data, index)=>{
+                                            return <a href={`/museum/${data.id}`}>
+                                                    <MuseumCard key={index} image={data.gambar} title={data.nama} desc={data.deskripsi}/>
+                                                    </a>
+                                        })
+                                    }
                                </div>
                             </div>
                         </div>

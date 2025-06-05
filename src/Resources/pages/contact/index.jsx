@@ -18,7 +18,7 @@ const Contact = () => {
                     
                 </div>
                 <div className="gap-32 inner-container w-full">
-                    <div className="left flex flex-col gap-16 text-secondary">
+                    <div className="left flex flex-col gap-32 text-secondary">
                         <h1 className="headline">
                             We are always ready to help and answer your question
                         </h1>

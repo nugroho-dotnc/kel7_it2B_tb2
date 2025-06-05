@@ -2,7 +2,7 @@ import React from 'react';
 import "../style/component.css"
 const MuseumCard = ({image, title, desc}) => {
   return (
-   <div className="museum-card">
+  <div className="museum-card">
   <img src={image} alt="Museum Jakarta Barat" />
   <div className="overlay">
     <h3>{title}</h3>

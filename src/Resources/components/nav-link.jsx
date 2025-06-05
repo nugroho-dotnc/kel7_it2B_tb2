@@ -6,7 +6,7 @@ const NavLink = ({label, link}) =>{
     const location = useLocation().pathname;
     return (
         <>
-        <Link to={link} className={`text-primary ${link == location?"active":""}`}>{label}</Link>
+        <Link to={link} className={`text-primary text-xl ${link == location?"active":""}`}>{label}</Link>
         </>
     )
 }
