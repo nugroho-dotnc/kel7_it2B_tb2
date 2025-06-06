@@ -7,14 +7,44 @@
     "gambar": "/images/museum/museum-nasional.jpeg",
     "koleksi": [
       {
-        "gambar": null,
-        "nama": "Arca Ganesha",
-        "deskripsi": "Patung dewa Ganesha dari zaman Hindu-Buddha di Indonesia."
+        "gambar": "/public/images/alusu-museum-nasional.jpg",
+        "nama": "Alusu",
+        "deskripsi": "Alusu adalah alat musik perkusi berbentuk tabung atau kotak yang diisi biji – bijian. Alat ini memegang peranan penting dalam tarian mabissu. Menurut kepercayaan setempat, bunyi yang terdengar dari alusu dianggap sebagai pengantar jalannya syair – syair berisikan pujian yang dipanjatkan kepada Sangiang Serri saat upacara menanam padi."
       },
       {
-        "gambar": null,
-        "nama": "Perhiasan Emas",
-        "deskripsi": "Koleksi perhiasan emas dari berbagai kerajaan di Nusantara."
+        "gambar": "/public/images/ani-ani-museum-nasional.jpg",
+        "nama": "Ani-Ani",
+        "deskripsi": "Dalam berbagai kebudayaan daerah, karena dianggap penting, padi dipersonifikasikan sebagai manusia atau dewa. Mitos mengenai padi ditemukan di banyak kebudayaan di Jawa, Sumatra, Sulawesi, Kalimantan, dan pulau-pulau di kawasan Nusa Tenggara. Dewi Sri, Sanghyang Pohaci, adalah contoh dewi padi di Pulau Jawa. Umumnya petani menghormati dan tidak ingin menyakitinya dengan menggunakan ani-ani atau ketam ketika panen."
+      },
+      {
+        "gambar": "/public/images/arca-buddha-museum-nasional.jpg",
+        "nama": "Arca Buddha",
+        "deskripsi": "Perunggu Sungai Komering, Palembang, Sumatra Selatan Abad 8 – 11 Arca Buddha berdiri samapāda temuan Sungai Komering, Palembang yang bergaya seni Sailendra. Tangan kanan bersikap abhaya (menolak bahaya), tangan kirinya memegang ujung jubah. Pakaiannya berupa jubah tipis yang menutupi kedua bahu. Gaya seni arca Sailendra dapat dicirikan dari bentuknya yang proporsional dan benar-benar menggambarkan sosok dewa yang dipuja. Di samping itu, arca Buddha ini juga mendapat pengaruh kesenian Pala. Karakter kesenian Pala dapat dilihat dari penggambaran pakaian berupa jubah tipis yang menutupi kedua bahu, usnisa (tonjolan di atas kepala) digambarkan lebih besar, dan lipatan jubah disekitar leher terlihat seperti kalung sementara bagian kain yang menjuntai ke bawah terlihat seperti ekor burung layang-layang."
+      },
+      {
+        "gambar": "/public/images/arca-garuda-museum-nasional.jpg",
+        "nama": "Arca Garuda",
+        "deskripsi": "Nama Garuda berasal dari kata Sanskerta. Garuda digambarkan sebagai kendaraan (wahana) Dewa Wisnu. Dalam agama Hindu, dewa Wisnu merupakan salah satu dari tiga dewa utama (trimurti) yang dipercaya sebagai Sang Pemelihara Alam Semesta. Garuda seringkali dilukiskan memiliki kepala, sayap, ekor dan moncong burung elang serta tubuh, tangan dan kaki seorang manusia. Garuda digunakan sebagai lambang kerajaan Airlangga pada abad ke-11 Masehi. Prasasti-prasasti yang dikeluarkan di masa pemerintahan Airlangga kerap menggunakan lambang Garuda yang dipahat di bagian puncak prasasti yang dikenal dengan sebutan Garudamukha lancana. Lambang garuda dipakai pula oleh raja-raja kerajaan Janggala yang dianggap penerus kerajaan Airlangga."
+      },
+      {
+        "gambar": "/public/images/figurin-perunggu-museum-nasional.jpg",
+        "nama": "Figurin Perunggu",
+        "deskripsi": "Patung perunggu ini menggambarkan penari-penari yang bergaya dinamis. Gaya patung-patung tersebut, seakan-akan menggambarkan babak sebuah tarian. Patung bergaya dinamis ini merupakan salah satu dari Sembilan buah patung yang ditemukan di Bangkinang, Riau. Terdapat lingkaran di atas kepalanya, sebagai kaitan. Kemungkinan digunakan sebagai bandul kalung dan sebagai benda upacara keagamaan."
+      },
+      {
+        "gambar": "/public/images/gelang-aceh-museum-nasional.jpg",
+        "nama": "Gelang Aceh",
+        "deskripsi": "Gelang ini dikenakan oleh perempuan Alas sebagai pelengkap dari busana tradisional saat upacara adat yang bersifat formal. Biasanya dikombinasikan dengan kalung dan anting."
+      },
+      {
+        "gambar": "/public/images/kendi-bulan-sabit-museum-nasional.jpg",
+        "nama": "Kendi Bulan Sabit",
+        "deskripsi": "Kendi porselen berwarna biru dan putih ini berbentuk bulan sabit dengan cerat yang muncul dari tengah. Cerat digunakan untuk menuang air atau cairan lain ke luar atau ke dalam kendi . Ujung kedua kendi dihias dengan perak berbentuk kerucut . Tak pernah ditemukan lagi di manapun kendi berbentuk seperti ini, sehingga diperkirakan kendi ini dibuat berdasarkan pesanan khusus pada zaman Dinasti Ming."
+      },
+      {
+        "gambar": "/public/images/keris-museum-nasional.jpg",
+        "nama": "Keris",
+        "deskripsi": "Keris, tombak, pedang dan senjata berpamor lainnya disebut pula tosan aji (besi yang bernilai tinggi dan dimuliakan). Keris ini merupakan keris dhapur Kebo Lajer, pamor tambal. Bilah kerisnya menunjukkan tangguh Cirebon pasca Majapahit abad XVI. Keris ini populer pada masyarakat petani dipedesaan. Simbol kekuatan rakyat yang tulus dan penurut. Keris Indonesia ditetapkan sebagai warisan budaya dunia pada tanggal 25 November 2005 sebagai the Masterpiece of Oral and Intangible Heritage of Humanity, yang kemudian terinskripsi dalam Representative List of Humanity UNESCO pada tahun 2009."
       }
     ]
   },
