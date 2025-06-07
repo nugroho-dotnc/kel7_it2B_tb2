@@ -53,8 +53,8 @@
     "id": 2,
     "nama": "Museum Basoeki Abdullah",
     "deskripsi": "Museum yang didedikasikan untuk pelukis ternama Indonesia, Basoeki Abdullah, menampilkan karya seni, lukisan, dan barang pribadi beliau.",
-    "lokasi": "Jl. Keuangan Raya No.19, Cilandak Barat, Jakarta Selatan",
-    "gambar": "/images/museum/museum-nasional.jpeg",
+    "lokasi": "Jl. Keuangan Raya No.19, Cilandak Bar., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12430",
+    "gambar": "/images/museum/museum-basoeki-abdullah.jpeg",
     "background": "/public/images/museum-basoeki-abdullah/museum-basoeki-abdullah-tampak-dalam.jpeg",
     "koleksi": [
       {
@@ -101,41 +101,101 @@
   },
   {
     "id": 3,
-    "nama": "Museum Taman Prasasti",
-    "deskripsi": "Museum terbuka yang menyimpan koleksi prasasti, nisan, dan peninggalan pemakaman bergaya kolonial.",
-    "lokasi": "Jl. Tanah Abang I No.1, Jakarta Pusat",
-    "gambar": "/images/museum/museum-nasional.jpeg",
-    "background": "/public/images/museum-basoeki-abdullah/museum-basoeki-abdullah-tampak-dalam.jpeg",
+    "nama": "Museum Satria Mandala",
+    "deskripsi": "Museum Satria Mandala adalah museum sejarah perjuangan Tentara Nasional Indonesia yang terletak di Jalan Gatot Subroto Kav. 14, Jakarta Selatan. Museum yang diresmikan pada tahun 1972 oleh mantan Presiden Indonesia, Soeharto ini awalnya adalah rumah dari salah satu istri mantan Presiden Indonesia, Soekarno, yaitu istrinya yang bernama Ratna Sari Dewi Soekarno.",
+    "lokasi": "Jl. Gatot Subroto No.14, RT.6/RW.1, Kuningan Bar., Kec. Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12710",
+    "gambar": "/images/museum/museum-satria-mandala.jpg",
+    "background": "/public/images/museum-satria-mandala/museum-satria-mandala-tampak-depan.jpg",
     "koleksi": [
       {
-        "gambar": null,
-        "nama": "Nisan VOC",
-        "deskripsi": "Nisan dari masa pemerintahan VOC di Batavia."
+        "gambar": "/public/images/museum-satria-mandala/pesawat-a-4-skyhawk-museum-satria-mandala.jpg",
+        "nama": "Pesawat A-4 Skyhawk",
+        "deskripsi": null
       },
       {
-        "gambar": null,
-        "nama": "Kereta Jenazah Antik",
-        "deskripsi": "Kereta jenazah bersejarah dari masa kolonial Belanda."
+        "gambar": "/public/images/museum-satria-mandala/pesawat-b-25-michell-1-museum-satria-mandala.jpg",
+        "nama": "Pesawat B-25 Michell 1",
+        "deskripsi": null
+      },
+      {
+        "gambar": "/public/images/museum-satria-mandala/helikopter-mil-mi-4-hound-museum-satria-mandala.jpg",
+        "nama": "Helikopter Mil MI-4-Hound",
+        "deskripsi": null
+      },
+      {
+        "gambar": "/public/images/museum-satria-mandala/tank-m3-stuart-museum-satria-mandala.jpg",
+        "nama": "Tank M3 Stuart",
+        "deskripsi": null
+      },
+      {
+        "gambar": "/public/images/museum-satria-mandala/pesawat-l-4j-piper-cub-museum-satria-mandala.jpg",
+        "nama": "Pesawat L-4J-Piper Cub",
+        "deskripsi": null
+      },
+      {
+        "gambar": "/public/images/museum-satria-mandala/pesawat-uf-1-albatros-ir-0117-museum-satria-mandala.jpg",
+        "nama": "Pesawat UF-1-Albatros-IR 0117",
+        "deskripsi": null
+      },
+      {
+        "gambar": "/public/images/museum-satria-mandala/pesawat-p-51-mustang-museum-satria-mandala.jpg",
+        "nama": "Pesawat P-51 Mustang",
+        "deskripsi": null
+      },
+      {
+        "gambar": "/public/images/museum-satria-mandala/pesawat-yokosuka-k5y-museum-satria-mandala.jpg",
+        "nama": "Pesawat K5Y Yokosuka",
+        "deskripsi": null
       }
     ]
   },
   {
     "id": 4,
     "nama": "Museum Bank Indonesia",
-    "deskripsi": "Museum edukatif yang menampilkan sejarah perbankan dan sistem keuangan Indonesia.",
-    "lokasi": "Jl. Pintu Besar Utara No.3, Jakarta Barat",
-    "gambar": "/images/museum/museum-nasional.jpeg",
-    "background": "/public/images/museum-basoeki-abdullah/museum-basoeki-abdullah-tampak-dalam.jpeg",
+    "deskripsi": "Museum Bank Indonesia adalah sebuah museum sejarah dan budaya yang terletak di Kelurahan Pinangsia, Kecamatan Taman Sari, Kota Jakarta Barat, Indonesia. Pendirian Museum Bank Indonesia ditetakan oleh Dewan Gubernur Bank Indonesia dengan tujuan untuk melestarikan gedung bersejarah milik Bank Indonesia di Kota Tua Jakarta sekaligus memperkenalkan peran Bank Indonesia dalam sejarah bangsa Indonesia.",
+    "lokasi": "Jl. Pintu Besar Utara No.3, RT.4/RW.6, Pinangsia, Kec. Taman Sari, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11110",
+    "gambar": "/images/museum/museum-bank-indonesia.webp",
+    "background": "/public/images/museum-bank-indonesia/museum-bank-indonesia-tampak-dalam.jpg",
     "koleksi": [
       {
-        "gambar": null,
-        "nama": "Mesin Hitung Kuno",
-        "deskripsi": "Mesin hitung yang digunakan oleh pegawai bank pada awal abad ke-20."
+        "gambar": "/public/images/museum-bank-indonesia/dinara-museum-bank-indonesia.png",
+        "nama": "Dinara",
+        "deskripsi": null
       },
       {
-        "gambar": null,
-        "nama": "Uang Kuno",
-        "deskripsi": "Koleksi uang kertas dan koin dari berbagai masa di Indonesia."
+        "gambar": "/public/images/museum-bank-indonesia/dukaton-museum-bank-indonesia.png",
+        "nama": "Dukaton",
+        "deskripsi": null
+      },
+      {
+        "gambar": "/public/images/museum-bank-indonesia/gobog-majapahit-museum-bank-indonesia.png",
+        "nama": "Gobog Majapahit",
+        "deskripsi": null
+      },
+      {
+        "gambar": "/public/images/museum-bank-indonesia/kasha-banten-museum-bank-indonesia.png",
+        "nama": "Kasha Banten",
+        "deskripsi": null
+      },
+      {
+        "gambar": "/public/images/museum-bank-indonesia/keueh-aceh-museum-bank-indonesia.png",
+        "nama": "Keueh Aceh",
+        "deskripsi": null
+      },
+      {
+        "gambar": "/public/images/museum-bank-indonesia/ma-perak-museum-bank-indonesia.png",
+        "nama": "Ma Perak",
+        "deskripsi": null
+      },
+      {
+        "gambar": "/public/images/museum-bank-indonesia/real-batu-sumenep-museum-bank-indonesia.png",
+        "nama": "Real Batu Sumenep",
+        "deskripsi": null
+      },
+      {
+        "gambar": "/public/images/museum-bank-indonesia/stuiver-museum-bank-indonesia.png",
+        "nama": "Stuiver",
+        "deskripsi": null
       }
     ]
   }
