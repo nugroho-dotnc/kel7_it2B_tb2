@@ -26,10 +26,12 @@ function AppContent() {
   return (
     <div className='w-full' style={{ overflow: "hidden" }}>
       {viewportWidth < 768 ? (
-        <header className="flex flex-col justify-between items-center p-16 bg-black w-full fixed">
+        <header className="flex flex-col justify-between items-center p-16 bg-black w-full fixed nav-base">
           <div className="flex flex-row justify-between items-center w-full">
             <div className="text-primary">
-              <h2>ArtExplorer</h2>
+              <a href='/'>
+                <h2>ArtExplorer</h2>
+              </a>
             </div>
             <a className="text-primary" onClick={toggleNavbar}>
               <Bars3Icon className="h-24 w-24 text-primary" />
@@ -38,25 +40,27 @@ function AppContent() {
 
           <div className={`nav-transition ${isOpen ? 'nav-open' : 'nav-closed'}`}>
             <nav className="flex flex-col gap-8 items-center mt-4">
-              <NavLink label="home" link="/" />
-              <NavLink label="contact" link="/contact" />
-              <NavLink label="about" link="/about" />
-              <NavLink label="gallery" link="/gallery" />
+              <NavLink label="Home" link="/" />
+              <NavLink label="Contact" link="/contact" />
+              <NavLink label="About" link="/about" />
+              <NavLink label="Gallery" link="/gallery" />
             </nav>
           </div>
         </header>
       ) : (
         <header className="flex flex-row justify-between items-center p-16 bg-black w-full fixed">
           <nav className="flex flex-row items-center justify-start gap-16">
-            <NavLink label="home" link="/" />
-            <NavLink label="contact" link="/contact" />
+            <NavLink label="Home" link="/" />
+            <NavLink label="Contact" link="/contact" />
           </nav>
           <div>
-            <h2 className="text-primary">ArtExplorer</h2>
+            <a href='/'>
+              <h2 className="text-primary">ArtExplorer</h2>
+            </a>
           </div>
           <nav className="flex flex-row items-center justify-start gap-16">
-            <NavLink label="about" link="/about" />
-            <NavLink label="gallery" link="/gallery" />
+            <NavLink label="About" link="/about" />
+            <NavLink label="Gallery" link="/gallery" />
           </nav>
         </header>
       )}

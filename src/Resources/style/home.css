@@ -55,7 +55,7 @@ button{
 }
 @media (min-width: 768px) {
   .headline {
-    font-size: 48px;
+    font-size: 72px;
     line-height: 48px;
   }
   .text-content{

@@ -1,6 +1,47 @@
-.bg-img1{
-    background-image: url("/images/museum.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.gallery-image{
+    height: 12rem;
+    width: 100%;
+    background-image: url('/images/CONTACT.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+.gallery-image .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.gallery-image .overlay h1{
+    font-size: 2rem;
+}
+.daftar-koleksi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 16px 24px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.gallery-container{
+    width: 1200px;
+}
+@media (min-width: 768px) {
+    .gallery-image{
+        height: 18rem;
+    }
+    .gallery-image .overlay h1{
+    font-size: 2.5rem;
+    }
+    .gallery-container{
+    width: 1600px;
+}
+    
 }
 

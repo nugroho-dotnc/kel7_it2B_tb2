@@ -185,7 +185,12 @@ body {
   word-break: break-word;
   overflow-wrap: break-word; 
 }
-
+.colspan-2 {
+  grid-column: span 2 / span 2;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word; 
+}
 .flex-row { flex-direction: row; }
 .flex-col { flex-direction: column; }
 .flex-row-reverse { flex-direction: row-reverse; }

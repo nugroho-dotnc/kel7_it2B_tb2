@@ -71,9 +71,7 @@ const Home = () => {
                                <div className="flex justify-start gap-8">
                                     {
                                         museum.map((data, index)=>{
-                                            return <a href={`/museum/${data.id}`}>
-                                                    <MuseumCard key={index} image={data.gambar} title={data.nama} desc={data.deskripsi}/>
-                                                    </a>
+                                            return <MuseumCard key={index} image={data.gambar} title={data.nama} desc={data.deskripsi} link={`/museum/${data.id}`}/>
                                         })
                                     }
                                </div>

@@ -6,11 +6,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* Background image will be set dynamically via inline style */
     height: 100vh;
     width: 100vw;
-    position: relative;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .black-box {
@@ -19,11 +20,8 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(2px);
     width: 70vw;
     height: 100%;
-    position: relative;
-    z-index: 2;
 }
 
 .deskripsi-museum {
@@ -101,74 +99,7 @@
     margin: 0 auto;
 }
 
-.card-koleksi {
-    background-color: #f8f9fa;
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-}
 
-.card-koleksi:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.card-koleksi::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        to bottom,
-        transparent 0%,
-        transparent 60%,
-        rgba(0, 0, 0, 0.3) 80%,
-        rgba(0, 0, 0, 0.7) 100%
-    );
-    z-index: 1;
-}
-
-.card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        to bottom,
-        transparent 0%,
-        transparent 50%,
-        rgba(0, 0, 0, 0.4) 80%,
-        rgba(0, 0, 0, 0.8) 100%
-    );
-    z-index: 1;
-}
-
-.nama-koleksi {
-    position: relative;
-    z-index: 2;
-}
-
-.placeholder-card {
-    border: 2px dashed #adb5bd;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef) !important;
-    transition: all 0.3s ease;
-}
-
-.placeholder-card:hover {
-    border-color: #725D3B;
-    background: linear-gradient(135deg, #e9ecef, #dee2e6) !important;
-}
 
 /* Loading Animation */
 @keyframes spin {
@@ -191,10 +122,10 @@
     }
 }
 
-/* RESPONSIVE DESIGN - Mobile (768px ke bawah) */
+
 @media (max-width: 768px) {
     .container-detail {
-        margin-top: 56px;
+        margin-top: 68px;
     }
 
     .page1 {
@@ -210,7 +141,6 @@
         padding: 24px;
         box-sizing: border-box;
         background-color: rgba(0, 0, 0, 0.7);
-        z-index: 1; /* Ensure it stays behind navbar in mobile too */
     }
 
     .deskripsi-museum {
@@ -263,235 +193,5 @@
         margin-bottom: 24px;
     }
 
-    .card-koleksi {
-        height: 220px;
-        border-radius: 12px;
-    }
-
-    .nama-koleksi h3 {
-        font-size: 14px !important;
-    }
-
-    .nama-koleksi p {
-        font-size: 11px !important;
-    }
 }
 
-/* RESPONSIVE DESIGN - Tablet (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .black-box {
-        width: 80vw;
-        z-index: 1; /* Ensure it stays behind navbar in tablet too */
-    }
-
-    .deskripsi-museum {
-        width: 85%;
-    }
-
-    .deskripsi-museum p:first-child {
-        font-size: 42px !important;
-    }
-
-    .deskripsi-museum p:nth-child(2) {
-        font-size: 18px !important;
-    }
-
-    .card-koleksi {
-        height: 260px;
-    }
-
-    .daftar-koleksi {
-        gap: 20px;
-        padding: 16px 20px;
-        margin-bottom: 24px;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .judul h1 {
-        font-size: 30px;
-    }
-}
-
-/* RESPONSIVE DESIGN - Large Tablet (1024px - 1200px) */
-@media (min-width: 1024px) and (max-width: 1200px) {
-    .daftar-koleksi {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-
-    .card-koleksi {
-        height: 280px;
-    }
-}
-
-/* RESPONSIVE DESIGN - Extra Small Mobile (480px ke bawah) */
-@media (max-width: 480px) {
-    .container-detail {
-        margin-top: 48px;
-    }
-
-    .black-box {
-        padding: 20px 16px;
-        z-index: 1; /* Ensure it stays behind navbar in small mobile too */
-    }
-
-    .deskripsi-museum {
-        padding: 16px 0;
-    }
-
-    .deskripsi-museum p:first-child {
-        font-size: 28px !important;
-        margin-bottom: 12px;
-    }
-
-    .deskripsi-museum p:nth-child(2) {
-        font-size: 14px !important;
-        margin-bottom: 16px;
-        line-height: 1.4;
-    }
-
-    .button {
-        padding: 12px 24px;
-        font-size: 14px;
-        margin-top: 20px;
-    }
-
-    .judul h1 {
-        font-size: 24px;
-    }
-
-    .page2 {
-        padding: 24px 0;
-    }
-
-    .card-koleksi {
-        height: 180px;
-    }
-
-    .daftar-koleksi {
-        grid-template-columns: 1fr;
-        gap: 16px;
-        padding: 16px;
-        margin-bottom: 20px;
-    }
-
-    .nama-koleksi {
-        padding: 10px !important;
-    }
-
-    .nama-koleksi h3 {
-        font-size: 13px !important;
-    }
-
-    .nama-koleksi p {
-        font-size: 10px !important;
-    }
-}
-
-/* Extra Large Screens */
-@media (min-width: 1400px) {
-    .container-detail {
-        margin-top: 72px;
-    }
-
-    .deskripsi-museum {
-        width: 60%;
-    }
-
-    .deskripsi-museum p:first-child {
-        font-size: 56px !important;
-    }
-
-    .deskripsi-museum p:nth-child(2) {
-        font-size: 22px !important;
-    }
-
-    .daftar-koleksi {
-        max-width: 1400px;
-        gap: 28px;
-    }
-
-    .card-koleksi {
-        height: 320px;
-    }
-
-    .judul h1 {
-        font-size: 36px;
-    }
-}
-
-/* Dark mode support (optional) */
-@media (prefers-color-scheme: dark) {
-    .page2 {
-        background-color: #1a1a1a;
-        color: #FFFBD9;
-    }
-
-    .judul {
-        border-bottom-color: #FFFBD9;
-    }
-
-    .placeholder-card {
-        background: linear-gradient(135deg, #2d2d2d, #3d3d3d) !important;
-        border-color: #555;
-        color: #ccc;
-    }
-}
-
-/* Print styles */
-@media print {
-    .container-detail {
-        margin-top: 0;
-    }
-
-    .page1 {
-        height: 50vh;
-        page-break-after: avoid;
-    }
-
-    .black-box {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    .button {
-        display: none;
-    }
-
-    .card-koleksi {
-        break-inside: avoid;
-        page-break-inside: avoid;
-    }
-}
-
-/* High contrast accessibility */
-@media (prefers-contrast: high) {
-    .black-box {
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-
-    .button {
-        border: 2px solid #847253;
-    }
-
-    .card-koleksi {
-        border: 1px solid #725D3B;
-    }
-}
-
-/* Reduced motion accessibility */
-@media (prefers-reduced-motion: reduce) {
-    .button,
-    .card-koleksi,
-    .deskripsi-museum {
-        transition: none;
-        animation: none;
-    }
-
-    .card-koleksi:hover {
-        transform: none;
-    }
-
-    .button:hover {
-        transform: none;
-    }
-}

@@ -7,7 +7,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-
 .nav-open {
   max-height: 500px; 
   opacity: 1;

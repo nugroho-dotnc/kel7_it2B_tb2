@@ -36,6 +36,15 @@
     font-size: 2rem;
     line-height: 32px;
 }
+.btn-submit{
+    padding: 8px 12px;
+    font-family: "playfair-display";
+    font-size: 18px;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    background-color: #725D3B;
+}
 @media (min-width: 768px) {
 .contact-image{
     height: 14rem;

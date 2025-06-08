@@ -1,7 +1,8 @@
 import React from 'react';
 import "../../../style/detail.css"
-import { useParams } from 'react-router-dom';
+import { data, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import GalleryCard from '../../../components/gallery-card';
 
 function MuseumDetail() {
   const { id } = useParams(); 
@@ -109,14 +110,11 @@ function MuseumDetail() {
 
   return (
     <>
-      <div className="container-detail">
+      <div className="container-detail" >
         <div 
           className="page1"
           style={{
             backgroundImage: `url(${getBackgroundImage(museum)})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
             backgroundAttachment: isMobile ? 'scroll' : 'fixed'
           }}
         >
@@ -168,171 +166,16 @@ function MuseumDetail() {
             </h1>
           </div>
 
-          {/* Show actual collections if available */}
-          {listKoleksi.length > 0 ? (
+          {(
             <div className="daftar-koleksi">
-              {listKoleksi.slice(0, 8).map((data, index) => (
-                <div 
-                  className='card-koleksi' 
-                  key={index} 
-                  style={{
-                    backgroundImage: data.gambar ? `url(${data.gambar.replace('/public/', '/')})` : 'none',
-                    backgroundColor: !data.gambar ? '#f5f5f5' : 'transparent',
-                    display: 'flex',
-                    alignItems: 'flex-end',
-                    cursor: 'pointer',
-                    position: 'relative'
-                  }}
-                  onClick={() => {
-                    console.log('Clicked collection:', data.nama)
-                  }}
-                >
-                  {/* Overlay for better text readability */}
-                  <div className='card-overlay'></div>
-                  
-                  {/* Placeholder icon if no image */}
-                  {!data.gambar && (
-                    <div style={{
-                      position: 'absolute',
-                      top: '50%',
-                      left: '50%',
-                      transform: 'translate(-50%, -50%)',
-                      fontSize: '48px',
-                      opacity: 0.5,
-                      zIndex: 1
-                    }}>
-                      🏛️
-                    </div>
-                  )}
-                  
-                  <div className='nama-koleksi' style={{
-                    background: 'linear-gradient(transparent, rgba(0,0,0,0.9))',
-                    color: '#FFFBD9',
-                    padding: isMobile ? '12px' : '16px',
-                    width: '100%',
-                    borderRadius: '0 0 8px 8px',
-                    position: 'relative',
-                    zIndex: 2
-                  }}>
-                    <h3 style={{
-                      margin: 0,
-                      fontSize: isMobile ? '14px' : '16px',
-                      fontWeight: 'bold',
-                      lineHeight: '1.3'
-                    }}>
-                      {data.nama}
-                    </h3>
-                    {data.deskripsi && data.deskripsi !== "-" && (
-                      <p style={{
-                        margin: '4px 0 0 0',
-                        fontSize: isMobile ? '11px' : '12px',
-                        opacity: 0.9,
-                        lineHeight: '1.3',
-                        display: '-webkit-box',
-                        WebkitLineClamp: 2,
-                        WebkitBoxOrient: 'vertical',
-                        overflow: 'hidden'
-                      }}>
-                        {data.deskripsi.length > 80 
-                          ? data.deskripsi.substring(0, 80) + '...' 
-                          : data.deskripsi
-                        }
-                      </p>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            // Fallback placeholder cards - 8 cards
-            <div className="daftar-koleksi">
-              {Array.from({length: 8}, (_, index) => (
-                <div 
-                  key={index + 1} 
-                  className="card-koleksi placeholder-card"
-                  style={{
-                    background: `linear-gradient(135deg, 
-                      ${index % 4 === 0 ? '#f8f9fa' : 
-                        index % 4 === 1 ? '#e9ecef' : 
-                        index % 4 === 2 ? '#dee2e6' : '#ced4da'}, 
-                      ${index % 4 === 0 ? '#e9ecef' : 
-                        index % 4 === 1 ? '#dee2e6' : 
-                        index % 4 === 2 ? '#ced4da' : '#adb5bd'})`,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    border: '2px dashed #adb5bd',
-                    position: 'relative',
-                    overflow: 'hidden'
-                  }}
-                >
-                  <div style={{
-                    textAlign: 'center',
-                    color: '#6c757d'
-                  }}>
-                    <div style={{
-                      fontSize: isMobile ? '32px' : '40px',
-                      marginBottom: '8px',
-                      opacity: 0.7
-                    }}>
-                      🏛️
-                    </div>
-                    <p style={{
-                      fontSize: isMobile ? '12px' : '14px',
-                      margin: 0,
-                      fontWeight: 'bold'
-                    }}>
-                      Koleksi {index + 1}
-                    </p>
-                    <p style={{
-                      fontSize: isMobile ? '10px' : '12px',
-                      margin: '4px 0 0 0',
-                      opacity: 0.7
-                    }}>
-                      Segera hadir
-                    </p>
-                  </div>
-                </div>
-              ))}
+             {
+              listKoleksi.map((data, index)=>{
+                return <GalleryCard data={data} key={index}/>
+              })
+             }
             </div>
           )}
 
-          {/* Show more button if there are more than 8 collections */}
-          {listKoleksi.length > 8 && (
-            <div style={{
-              textAlign: 'center',
-              marginTop: '32px'
-            }}>
-              <button 
-                className="button"
-                style={{
-                  backgroundColor: '#725D3B',
-                  color: '#FFFBD9',
-                  border: 'none',
-                  padding: '12px 24px',
-                  fontSize: '16px',
-                  borderRadius: '8px',
-                  cursor: 'pointer',
-                  fontWeight: 'bold',
-                  transition: 'all 0.3s ease'
-                }}
-                onClick={() => {
-                  // Add logic to show more collections
-                  console.log('Show more collections')
-                }}
-                onMouseOver={(e) => {
-                  e.target.style.backgroundColor = '#847253'
-                  e.target.style.transform = 'translateY(-2px)'
-                }}
-                onMouseOut={(e) => {
-                  e.target.style.backgroundColor = '#725D3B'
-                  e.target.style.transform = 'translateY(0)'
-                }}
-              >
-                Lihat Koleksi Lainnya ({listKoleksi.length - 8})
-              </button>
-            </div>
-          )}
         </div>
       </div>
     </>
