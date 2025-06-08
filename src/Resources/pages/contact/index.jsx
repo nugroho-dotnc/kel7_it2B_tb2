@@ -26,43 +26,30 @@ const Contact = () => {
                             lorem ipsum color sit de amet lorentz de amigos na munos de quarto de paso en pasa da la moda del gelato
                         </p>
                         <div className="grid grid-cols-2 gap-16 w-full">
-                                <div className="colspan-1 w-full">
-                                    <h2>
-                                        Contact
-                                    </h2>
-                                    <p className="text-sm">Naufal - 085174071072</p>
-                                    <p className="text-sm">Naufal - 085174071072</p>
-                                </div>
-                                <div className="colspan-1 w-full">
-                                    <h2>
-                                        Email
-                                    </h2>
-                                    <p>
-                                        Naufal - naufalbintangpadana@gmail.com
-                                    </p>
-                                    <p>
-                                       Nugroho - nuganuca17@gmail.com
-                                    </p>
-                                </div>
-                                <div className="colspan-1 w-full">
-                                    <h2>
-                                        Location
-                                    </h2>
-                                    <p className="text-sm" style={{ width: "100% " }}>Universitas Indonesia, Jl. Prof. DR. G.A. Siwabessy, Kukusan, Beji, Depok City, West Java 16425</p>
-                                </div>
-                                <div className="colspan-1 w-full">
-                                    <h2>
-                                        Social
-                                    </h2>
-                                    <div className="flex gap-16">
-                                        <a>
-                                            <img style={{ width: "20px", height: "20px", objectFit: "cover" }}  src="/images/instagram.png"></img>
-                                        </a>
-                                        <a>
-                                            <img style={{ width: "20px", height: "20px", objectFit: "cover" }} src="/images/X.png"></img>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div className="colspan-1 w-full">
+                                <h2>
+                                    Contact
+                                </h2>
+                                <p className="text-sm">Naufal  - 0851-7407-1072</p>
+                                <p className="text-sm">Nugroho - 0895-2313-3302</p>
+                            </div>
+                            <div className="colspan-1 w-full">
+                                <h2>
+                                    Email
+                                </h2>
+                                <p>
+                                    Naufal - naufalbintangpradana@gmail.com
+                                </p>
+                                <p>
+                                    Nugroho - nuganuca17@gmail.com
+                                </p>
+                            </div>
+                            <div className="colspan-1 w-full">
+                                <h2>
+                                    Location
+                                </h2>
+                                <p className="text-sm" style={{ width: "100% " }}>Universitas Indonesia, Jl. Prof. DR. G.A. Siwabessy, Kukusan, Beji, Depok City, West Java 16425</p>
+                            </div>
                         </div>
                     </div>
                     <div className="right p-16 w-full bg-primary-100 rounded-md">

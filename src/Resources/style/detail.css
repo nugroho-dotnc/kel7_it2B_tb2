@@ -210,6 +210,7 @@
         padding: 24px;
         box-sizing: border-box;
         background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1; /* Ensure it stays behind navbar in mobile too */
     }
 
     .deskripsi-museum {
@@ -280,6 +281,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .black-box {
         width: 80vw;
+        z-index: 1; /* Ensure it stays behind navbar in tablet too */
     }
 
     .deskripsi-museum {
@@ -330,6 +332,7 @@
 
     .black-box {
         padding: 20px 16px;
+        z-index: 1; /* Ensure it stays behind navbar in small mobile too */
     }
 
     .deskripsi-museum {

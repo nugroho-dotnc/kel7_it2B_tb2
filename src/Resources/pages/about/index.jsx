@@ -15,13 +15,7 @@ const About = () => {
                             <div style={{ height: "75%", width: "75%", color: "#847253" }}>
                                 <h1 style={{ textAlign: "center" }}>Nugroho Nur Cahyo</h1>
                                 <p style={{ textAlign: "justify" }}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eligendi officia vitae reprehenderit
-                                    saepe sint sunt fugit distinctio odit doloremque? Veritatis quasi animi ipsa maxime molestiae saepe eligendi,
-                                    voluptas perferendis optio tempora laboriosam explicabo nam. Ex nemo odit impedit iure labore. Facilis
-                                    repellendus nesciunt optio minima, iure possimus atque qui praesentium dolor suscipit nemo quis voluptatum
-                                    soluta quas dolores culpa. Iste iure tempora accusantium autem dolore molestias ex officia similique, enim
-                                    voluptas ducimus qui aspernatur voluptates eum nam quaerat vitae sit quidem quae, labore molestiae. Fugiat,
-                                    numquam dolorum quia nisi quos similique voluptatum temporibus minus quasi a inventore harum nulla!
+                                    Halo semua, perkenalkan nama saya Nugroho Nur Cahyo, biasa dipanggil Nugroho, Nugi, Nunu, Nunung, atau sebutan lain yang kalian suka. Aku berasal dari Solo, Jawa Tengah, dan bahasa sehari-hariku adalah Bahasa Jawa, jadi kalau ada yang pengin ngobrol pakai Jawa, gas aja! 😄 Di project ini, aku berperan sebagai Project Manager. Tugas utamaku adalah memberikan arahan, mengatur alur kerja tim, serta memastikan semua bagian dari project berjalan lancar dan sesuai timeline. Selain itu, aku juga ikut terlibat langsung dalam development, khususnya menghandle beberapa halaman, salah satunya adalah page Home. Kalau ada hal yang perlu dikomunikasikan seputar teknis, alur kerja, atau pembagian tugas, feel free banget buat hubungi aku. Yuk kita kerja bareng, saling support, dan semoga project ini bisa jadi pengalaman seru dan bermanfaat buat kita semua! 💪
                                 </p>
                                 <div style={{ marginTop: "8px" }}>
                                     <a href="https://www.instagram.com/nugroho.nc/" target="_blank">
