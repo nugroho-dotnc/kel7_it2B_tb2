@@ -20,8 +20,9 @@ const Contact = () => {
                 <div className="gap-32 inner-container w-full">
                     <div className="left flex flex-col gap-32 text-secondary">
                         <h1 className="headline">
-                            We are always ready to help and answer your question
+                            We're always ready to help and answer your question
                         </h1>
+                        <hr></hr>
                         <p>
                             Terima kasih atas kunjungan Anda. Jika ada hal yang ingin Anda diskusikan—baik itu pertanyaan, kolaborasi, maupun dukungan layanan—silakan hubungi kami melalui formulir kontak atau informasi yang tercantum. Kami berkomitmen untuk memberikan respon terbaik dalam waktu sesingkat mungkin.
                         </p>

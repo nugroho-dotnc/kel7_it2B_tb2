@@ -19,14 +19,14 @@ const Home = () => {
         <div className="flex flex-col gap-16" style={{ scrollBehavior:"smooth" }}>
                 <section className="h-screen w-full flex items-center justify-center bg-hero overflow-hidden">
                     <div className="flex flex-col gap-16">
-                        <h1 className="text-primary-100 text-center headline" >
+                        <h1 className="text-primary-100 text-center headline text-shadow-home" >
                             Bienvenue au <br></br>Sanctuaire des Arts
                         </h1>
-                        <p className="text-primary-100 text-content text-center">
+                        <p className="text-primary-100 text-content text-center text-shadow-home">
                             Là où le passé respire encore
                         </p>
                         <div className="w-full flex justify-center">
-                            <a className="text-secondary bg-primary px-16 py-8 rounded-full btn" href="#more">
+                            <a className="text-secondary text-xl bg-primary px-16 py-8 rounded-full btn" href="#more">
                                 Readmore
                             </a>
                         </div>

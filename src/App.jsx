@@ -30,7 +30,7 @@ function AppContent() {
           <div className="flex flex-row justify-between items-center w-full">
             <div className="text-primary">
               <a href='/'>
-                <h2>ArtExplorer</h2>
+                <h2 className="text-primary">ArtExplorer</h2>
               </a>
             </div>
             <a className="text-primary" onClick={toggleNavbar}>
