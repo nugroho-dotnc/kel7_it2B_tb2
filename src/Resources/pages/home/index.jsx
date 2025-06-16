@@ -26,7 +26,7 @@ const Home = () => {
                             Là où le passé respire encore
                         </p>
                         <div className="w-full flex justify-center">
-                            <a className="text-secondary text-xl bg-primary px-16 py-8 rounded-full btn" href="#more">
+                            <a className="text-secondary bg-primary readmore-btn" href="#more">
                                 Readmore
                             </a>
                         </div>
